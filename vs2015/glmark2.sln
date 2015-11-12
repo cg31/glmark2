@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24627.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glmark2", "glmark2\glmark2.vcxproj", "{A0953542-6028-47FE-A7FA-AD97E37988AD}"
+EndProject
+Project("{39E2626F-3545-4960-A6E8-258AD8476CE5}") = "glmark2app", "glmark2app\glmark2app.androidproj", "{949B830C-3EE1-4E63-948D-F2A8017508F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Debug|ARM.Build.0 = Debug|ARM
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Debug|x86.ActiveCfg = Debug|x86
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Debug|x86.Build.0 = Debug|x86
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Release|ARM.ActiveCfg = Release|ARM
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Release|ARM.Build.0 = Release|ARM
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Release|x86.ActiveCfg = Release|x86
+		{A0953542-6028-47FE-A7FA-AD97E37988AD}.Release|x86.Build.0 = Release|x86
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Debug|ARM.ActiveCfg = Debug|ARM
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Debug|ARM.Build.0 = Debug|ARM
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Debug|ARM.Deploy.0 = Debug|ARM
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Debug|x86.ActiveCfg = Debug|x86
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Debug|x86.Build.0 = Debug|x86
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Debug|x86.Deploy.0 = Debug|x86
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Release|ARM.ActiveCfg = Release|ARM
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Release|ARM.Build.0 = Release|ARM
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Release|ARM.Deploy.0 = Release|ARM
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Release|x86.ActiveCfg = Release|x86
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Release|x86.Build.0 = Release|x86
+		{949B830C-3EE1-4E63-948D-F2A8017508F3}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

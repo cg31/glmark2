@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A0953542-6028-47FE-A7FA-AD97E37988AD}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>glmark2</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <ProjectName>glmark2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <UseOfStl>gnustl_static</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>../../src;../../src/libjpeg;../../src/libmatrix;../../src/libpng;../../src/scene-ideas;../../src/scene-terrain;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLMARK2_USE_GLESv2;ANDROID</PreprocessorDefinitions>
+      <CppLanguageStandard>Default</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-DGLMARK_DATA_PATH="" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;GLESv2;EGL;z;m</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>../../src;../../src/libjpeg;../../src/libmatrix;../../src/libpng;../../src/scene-ideas;../../src/scene-terrain;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLMARK2_USE_GLESv2;ANDROID</PreprocessorDefinitions>
+      <CppLanguageStandard>Default</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-DGLMARK_DATA_PATH="" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;GLESv2;EGL;z;m</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>../../src;../../src/libjpeg;../../src/libmatrix;../../src/libpng;../../src/scene-ideas;../../src/scene-terrain;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLMARK2_USE_GLESv2;ANDROID</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-DGLMARK_DATA_PATH="" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;GLESv2;EGL;z;m</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>../../src;../../src/libjpeg;../../src/libmatrix;../../src/libpng;../../src/scene-ideas;../../src/scene-terrain;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLMARK2_USE_GLESv2;ANDROID</PreprocessorDefinitions>
+      <CppLanguageStandard>Default</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-DGLMARK_DATA_PATH="" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;GLESv2;EGL;z;m</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\benchmark-collection.h" />
+    <ClInclude Include="..\..\src\benchmark.h" />
+    <ClInclude Include="..\..\src\canvas-android.h" />
+    <ClInclude Include="..\..\src\canvas-generic.h" />
+    <ClInclude Include="..\..\src\canvas.h" />
+    <ClInclude Include="..\..\src\default-benchmarks.h" />
+    <ClInclude Include="..\..\src\gl-headers.h" />
+    <ClInclude Include="..\..\src\gl-state-egl.h" />
+    <ClInclude Include="..\..\src\gl-state.h" />
+    <ClInclude Include="..\..\src\gl-visual-config.h" />
+    <ClInclude Include="..\..\src\image-reader.h" />
+    <ClInclude Include="..\..\src\libjpeg\jconfig.h" />
+    <ClInclude Include="..\..\src\libjpeg\jdct.h" />
+    <ClInclude Include="..\..\src\libjpeg\jerror.h" />
+    <ClInclude Include="..\..\src\libjpeg\jinclude.h" />
+    <ClInclude Include="..\..\src\libjpeg\jmemsys.h" />
+    <ClInclude Include="..\..\src\libjpeg\jmorecfg.h" />
+    <ClInclude Include="..\..\src\libjpeg\jpegint.h" />
+    <ClInclude Include="..\..\src\libjpeg\jpeglib.h" />
+    <ClInclude Include="..\..\src\libmatrix\gl-if.h" />
+    <ClInclude Include="..\..\src\libmatrix\log.h" />
+    <ClInclude Include="..\..\src\libmatrix\mat.h" />
+    <ClInclude Include="..\..\src\libmatrix\program.h" />
+    <ClInclude Include="..\..\src\libmatrix\shader-source.h" />
+    <ClInclude Include="..\..\src\libmatrix\stack.h" />
+    <ClInclude Include="..\..\src\libmatrix\util.h" />
+    <ClInclude Include="..\..\src\libmatrix\vec.h" />
+    <ClInclude Include="..\..\src\libpng\png.h" />
+    <ClInclude Include="..\..\src\libpng\pngconf.h" />
+    <ClInclude Include="..\..\src\main-loop.h" />
+    <ClInclude Include="..\..\src\mesh.h" />
+    <ClInclude Include="..\..\src\model.h" />
+    <ClInclude Include="..\..\src\native-state.h" />
+    <ClInclude Include="..\..\src\options.h" />
+    <ClInclude Include="..\..\src\scene-collection.h" />
+    <ClInclude Include="..\..\src\scene-ideas\characters.h" />
+    <ClInclude Include="..\..\src\scene-ideas\lamp.h" />
+    <ClInclude Include="..\..\src\scene-ideas\logo.h" />
+    <ClInclude Include="..\..\src\scene-ideas\splines.h" />
+    <ClInclude Include="..\..\src\scene-ideas\table.h" />
+    <ClInclude Include="..\..\src\scene-jellyfish.h" />
+    <ClInclude Include="..\..\src\scene-refract.h" />
+    <ClInclude Include="..\..\src\scene-terrain\renderer.h" />
+    <ClInclude Include="..\..\src\scene.h" />
+    <ClInclude Include="..\..\src\text-renderer.h" />
+    <ClInclude Include="..\..\src\texture.h" />
+    <ClInclude Include="android_native_app_glue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\benchmark-collection.cpp" />
+    <ClCompile Include="..\..\src\benchmark.cpp" />
+    <ClCompile Include="..\..\src\canvas-android.cpp" />
+    <ClCompile Include="..\..\src\canvas-generic.cpp" />
+    <ClCompile Include="..\..\src\gl-headers.cpp" />
+    <ClCompile Include="..\..\src\gl-state-egl.cpp" />
+    <ClCompile Include="..\..\src\gl-visual-config.cpp" />
+    <ClCompile Include="..\..\src\image-reader.cpp" />
+    <ClCompile Include="..\..\src\libjpeg\jaricom.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcapimin.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcapistd.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcarith.c" />
+    <ClCompile Include="..\..\src\libjpeg\jccoefct.c" />
+    <ClCompile Include="..\..\src\libjpeg\jccolor.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcdctmgr.c" />
+    <ClCompile Include="..\..\src\libjpeg\jchuff.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcinit.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcmainct.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcmarker.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcmaster.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcomapi.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcparam.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcprepct.c" />
+    <ClCompile Include="..\..\src\libjpeg\jcsample.c" />
+    <ClCompile Include="..\..\src\libjpeg\jctrans.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdapimin.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdapistd.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdarith.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdatadst.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdatasrc.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdcoefct.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdcolor.c" />
+    <ClCompile Include="..\..\src\libjpeg\jddctmgr.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdhuff.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdinput.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdmainct.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdmarker.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdmaster.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdmerge.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdpostct.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdsample.c" />
+    <ClCompile Include="..\..\src\libjpeg\jdtrans.c" />
+    <ClCompile Include="..\..\src\libjpeg\jerror.c" />
+    <ClCompile Include="..\..\src\libjpeg\jfdctflt.c" />
+    <ClCompile Include="..\..\src\libjpeg\jfdctfst.c" />
+    <ClCompile Include="..\..\src\libjpeg\jfdctint.c" />
+    <ClCompile Include="..\..\src\libjpeg\jidctflt.c" />
+    <ClCompile Include="..\..\src\libjpeg\jidctfst.c" />
+    <ClCompile Include="..\..\src\libjpeg\jidctint.c" />
+    <ClCompile Include="..\..\src\libjpeg\jmemansi.c" />
+    <ClCompile Include="..\..\src\libjpeg\jmemmgr.c" />
+    <ClCompile Include="..\..\src\libjpeg\jquant1.c" />
+    <ClCompile Include="..\..\src\libjpeg\jquant2.c" />
+    <ClCompile Include="..\..\src\libjpeg\jutils.c" />
+    <ClCompile Include="..\..\src\libmatrix\log.cc" />
+    <ClCompile Include="..\..\src\libmatrix\mat.cc" />
+    <ClCompile Include="..\..\src\libmatrix\program.cc" />
+    <ClCompile Include="..\..\src\libmatrix\shader-source.cc" />
+    <ClCompile Include="..\..\src\libmatrix\util.cc" />
+    <ClCompile Include="..\..\src\libpng\png.c" />
+    <ClCompile Include="..\..\src\libpng\pngerror.c" />
+    <ClCompile Include="..\..\src\libpng\pnggccrd.c" />
+    <ClCompile Include="..\..\src\libpng\pngget.c" />
+    <ClCompile Include="..\..\src\libpng\pngmem.c" />
+    <ClCompile Include="..\..\src\libpng\pngpread.c" />
+    <ClCompile Include="..\..\src\libpng\pngread.c" />
+    <ClCompile Include="..\..\src\libpng\pngrio.c" />
+    <ClCompile Include="..\..\src\libpng\pngrtran.c" />
+    <ClCompile Include="..\..\src\libpng\pngrutil.c" />
+    <ClCompile Include="..\..\src\libpng\pngset.c" />
+    <ClCompile Include="..\..\src\libpng\pngtrans.c" />
+    <ClCompile Include="..\..\src\libpng\pngvcrd.c" />
+    <ClCompile Include="..\..\src\libpng\pngwio.c" />
+    <ClCompile Include="..\..\src\libpng\pngwrite.c" />
+    <ClCompile Include="..\..\src\libpng\pngwtran.c" />
+    <ClCompile Include="..\..\src\libpng\pngwutil.c" />
+    <ClCompile Include="..\..\src\main-loop.cpp" />
+    <ClCompile Include="..\..\src\mesh.cpp" />
+    <ClCompile Include="..\..\src\model.cpp" />
+    <ClCompile Include="..\..\src\options.cpp" />
+    <ClCompile Include="..\..\src\scene-buffer.cpp" />
+    <ClCompile Include="..\..\src\scene-build.cpp" />
+    <ClCompile Include="..\..\src\scene-bump.cpp" />
+    <ClCompile Include="..\..\src\scene-clear.cpp" />
+    <ClCompile Include="..\..\src\scene-conditionals.cpp" />
+    <ClCompile Include="..\..\src\scene-default-options.cpp" />
+    <ClCompile Include="..\..\src\scene-desktop.cpp" />
+    <ClCompile Include="..\..\src\scene-effect-2d.cpp" />
+    <ClCompile Include="..\..\src\scene-function.cpp" />
+    <ClCompile Include="..\..\src\scene-grid.cpp" />
+    <ClCompile Include="..\..\src\scene-ideas.cpp" />
+    <ClCompile Include="..\..\src\scene-ideas\a.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\d.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\e.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\i.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\lamp.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\logo.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\m.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\n.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\o.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\s.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\splines.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\t.cc" />
+    <ClCompile Include="..\..\src\scene-ideas\table.cc" />
+    <ClCompile Include="..\..\src\scene-jellyfish.cpp" />
+    <ClCompile Include="..\..\src\scene-loop.cpp" />
+    <ClCompile Include="..\..\src\scene-pulsar.cpp" />
+    <ClCompile Include="..\..\src\scene-refract.cpp" />
+    <ClCompile Include="..\..\src\scene-shading.cpp" />
+    <ClCompile Include="..\..\src\scene-shadow.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\base-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\blur-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\copy-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\luminance-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\normal-from-height-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\overlay-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\renderer-chain.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\simplex-noise-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\terrain-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-terrain\texture-renderer.cpp" />
+    <ClCompile Include="..\..\src\scene-texture.cpp" />
+    <ClCompile Include="..\..\src\scene.cpp" />
+    <ClCompile Include="..\..\src\text-renderer.cpp" />
+    <ClCompile Include="..\..\src\texture.cpp" />
+    <ClCompile Include="android_native_app_glue.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\src\benchmark.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\benchmark-collection.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\canvas.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\canvas-android.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\canvas-generic.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\default-benchmarks.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gl-headers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gl-state.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gl-state-egl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gl-visual-config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\image-reader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\main-loop.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mesh.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\model.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\native-state.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\options.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-collection.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-jellyfish.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-refract.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\text-renderer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\texture.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\gl-if.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\log.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\mat.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\program.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\shader-source.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\stack.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\util.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libmatrix\vec.h">
+      <Filter>src\libmatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-ideas\characters.h">
+      <Filter>src\scene-ideas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-ideas\lamp.h">
+      <Filter>src\scene-ideas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-ideas\logo.h">
+      <Filter>src\scene-ideas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-ideas\splines.h">
+      <Filter>src\scene-ideas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-ideas\table.h">
+      <Filter>src\scene-ideas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\scene-terrain\renderer.h">
+      <Filter>src\scene-terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng\png.h">
+      <Filter>src\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libpng\pngconf.h">
+      <Filter>src\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jconfig.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jdct.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jerror.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jinclude.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jmemsys.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jmorecfg.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jpegint.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libjpeg\jpeglib.h">
+      <Filter>src\libjpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="android_native_app_glue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\benchmark.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\benchmark-collection.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\canvas-android.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\canvas-generic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl-headers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl-state-egl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl-visual-config.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\image-reader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main-loop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\model.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\options.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-buffer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-build.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-bump.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-clear.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-conditionals.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-default-options.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-desktop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-effect-2d.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-function.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-grid.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-jellyfish.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-loop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-pulsar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-refract.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-shading.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-shadow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-texture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\text-renderer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\texture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libmatrix\log.cc">
+      <Filter>src\libmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libmatrix\mat.cc">
+      <Filter>src\libmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libmatrix\program.cc">
+      <Filter>src\libmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libmatrix\shader-source.cc">
+      <Filter>src\libmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libmatrix\util.cc">
+      <Filter>src\libmatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\a.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\d.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\e.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\i.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\lamp.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\logo.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\m.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\n.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\o.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\s.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\splines.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\t.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-ideas\table.cc">
+      <Filter>src\scene-ideas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\base-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\blur-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\copy-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\luminance-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\normal-from-height-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\overlay-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\renderer-chain.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\simplex-noise-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\terrain-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene-terrain\texture-renderer.cpp">
+      <Filter>src\scene-terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\png.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngerror.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pnggccrd.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngget.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngmem.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngpread.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngread.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngrio.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngrtran.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngrutil.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngset.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngtrans.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngvcrd.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngwio.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngwrite.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngwtran.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libpng\pngwutil.c">
+      <Filter>src\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jaricom.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcapimin.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcapistd.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcarith.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jccoefct.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jccolor.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcdctmgr.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jchuff.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcinit.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcmainct.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcmarker.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcmaster.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcomapi.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcparam.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcprepct.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jctrans.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdapimin.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdapistd.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdarith.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdatadst.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdatasrc.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdcoefct.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdcolor.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jddctmgr.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdhuff.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdinput.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdmainct.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdmarker.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdmaster.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdmerge.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdpostct.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdtrans.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jerror.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jfdctflt.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jfdctfst.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jfdctint.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jidctflt.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jidctfst.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jidctint.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jmemansi.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jmemmgr.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jutils.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jcsample.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jquant1.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jquant2.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libjpeg\jdsample.c">
+      <Filter>src\libjpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="android_native_app_glue.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{126a9ddf-8123-4a28-9224-1a0e831b526f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libmatrix">
+      <UniqueIdentifier>{1aad04d5-5b40-4e9e-9a0b-2155ee71d588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scene-ideas">
+      <UniqueIdentifier>{f684c1c6-d16c-46cc-9529-1812fc9efd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scene-terrain">
+      <UniqueIdentifier>{49884b6b-0cca-4845-bb30-983b023e1131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libpng">
+      <UniqueIdentifier>{dd405264-3e6a-4546-9902-4601a9b811c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libjpeg">
+      <UniqueIdentifier>{4546f94f-f67d-459d-9385-48d2c0a70395}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

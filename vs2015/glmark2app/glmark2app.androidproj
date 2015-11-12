@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>glmark2</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ProjectVersion>1.0</ProjectVersion>
+    <ProjectGuid>{949b830c-3ee1-4e63-948d-f2a8017508f3}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Content Include="AndroidManifest.xml" />
+    <Content Include="assets\models\asteroid-high.3ds" />
+    <Content Include="assets\models\asteroid-low.3ds" />
+    <Content Include="assets\models\bunny.obj" />
+    <Content Include="assets\models\cat.3ds" />
+    <Content Include="assets\models\cube.3ds" />
+    <Content Include="assets\models\horse.3ds" />
+    <Content Include="assets\models\jellyfish.jobj" />
+    <Content Include="assets\shaders\buffer-wireframe.frag" />
+    <Content Include="assets\shaders\buffer-wireframe.vert" />
+    <Content Include="assets\shaders\bump-height.frag" />
+    <Content Include="assets\shaders\bump-height.vert" />
+    <Content Include="assets\shaders\bump-normals-tangent.frag" />
+    <Content Include="assets\shaders\bump-normals-tangent.vert" />
+    <Content Include="assets\shaders\bump-normals.frag" />
+    <Content Include="assets\shaders\bump-normals.vert" />
+    <Content Include="assets\shaders\bump-poly.frag" />
+    <Content Include="assets\shaders\bump-poly.vert" />
+    <Content Include="assets\shaders\conditionals-step-conditional.all" />
+    <Content Include="assets\shaders\conditionals-step-simple.all" />
+    <Content Include="assets\shaders\conditionals.frag" />
+    <Content Include="assets\shaders\conditionals.vert" />
+    <Content Include="assets\shaders\depth.frag" />
+    <Content Include="assets\shaders\depth.vert" />
+    <Content Include="assets\shaders\desktop-blur.frag" />
+    <Content Include="assets\shaders\desktop.frag" />
+    <Content Include="assets\shaders\desktop.vert" />
+    <Content Include="assets\shaders\effect-2d-convolution.frag" />
+    <Content Include="assets\shaders\effect-2d.vert" />
+    <Content Include="assets\shaders\function-call.all" />
+    <Content Include="assets\shaders\function-step-low.all" />
+    <Content Include="assets\shaders\function-step-medium.all" />
+    <Content Include="assets\shaders\function.frag" />
+    <Content Include="assets\shaders\function.vert" />
+    <Content Include="assets\shaders\gradient.frag" />
+    <Content Include="assets\shaders\gradient.vert" />
+    <Content Include="assets\shaders\ideas-lamp-lit.frag" />
+    <Content Include="assets\shaders\ideas-lamp-lit.vert" />
+    <Content Include="assets\shaders\ideas-lamp-unlit.frag" />
+    <Content Include="assets\shaders\ideas-lamp-unlit.vert" />
+    <Content Include="assets\shaders\ideas-logo-flat.frag" />
+    <Content Include="assets\shaders\ideas-logo-flat.vert" />
+    <Content Include="assets\shaders\ideas-logo-shadow.frag" />
+    <Content Include="assets\shaders\ideas-logo-shadow.vert" />
+    <Content Include="assets\shaders\ideas-logo.frag" />
+    <Content Include="assets\shaders\ideas-logo.vert" />
+    <Content Include="assets\shaders\ideas-paper.frag" />
+    <Content Include="assets\shaders\ideas-paper.vert" />
+    <Content Include="assets\shaders\ideas-table.frag" />
+    <Content Include="assets\shaders\ideas-table.vert" />
+    <Content Include="assets\shaders\ideas-text.frag" />
+    <Content Include="assets\shaders\ideas-text.vert" />
+    <Content Include="assets\shaders\ideas-under-table.frag" />
+    <Content Include="assets\shaders\ideas-under-table.vert" />
+    <Content Include="assets\shaders\jellyfish.frag" />
+    <Content Include="assets\shaders\jellyfish.vert" />
+    <Content Include="assets\shaders\light-advanced.frag" />
+    <Content Include="assets\shaders\light-advanced.vert" />
+    <Content Include="assets\shaders\light-basic-tex-bilinear.frag" />
+    <Content Include="assets\shaders\light-basic-tex.frag" />
+    <Content Include="assets\shaders\light-basic-texgen.vert" />
+    <Content Include="assets\shaders\light-basic.frag" />
+    <Content Include="assets\shaders\light-basic.vert" />
+    <Content Include="assets\shaders\light-cel.frag" />
+    <Content Include="assets\shaders\light-phong.frag" />
+    <Content Include="assets\shaders\light-phong.vert" />
+    <Content Include="assets\shaders\light-refract.frag" />
+    <Content Include="assets\shaders\light-refract.vert" />
+    <Content Include="assets\shaders\loop-step-loop.all" />
+    <Content Include="assets\shaders\loop-step-simple.all" />
+    <Content Include="assets\shaders\loop.frag" />
+    <Content Include="assets\shaders\loop.vert" />
+    <Content Include="assets\shaders\pulsar-light.vert" />
+    <Content Include="assets\shaders\pulsar.vert" />
+    <Content Include="assets\shaders\README.shaders" />
+    <Content Include="assets\shaders\shadow.frag" />
+    <Content Include="assets\shaders\shadow.vert" />
+    <Content Include="assets\shaders\terrain-blur.frag" />
+    <Content Include="assets\shaders\terrain-luminance.frag" />
+    <Content Include="assets\shaders\terrain-noise.frag" />
+    <Content Include="assets\shaders\terrain-normalmap.frag" />
+    <Content Include="assets\shaders\terrain-overlay.frag" />
+    <Content Include="assets\shaders\terrain-texture.vert" />
+    <Content Include="assets\shaders\terrain.frag" />
+    <Content Include="assets\shaders\terrain.vert" />
+    <Content Include="assets\shaders\text-renderer.frag" />
+    <Content Include="assets\shaders\text-renderer.vert" />
+    <Content Include="assets\textures\asteroid-height-map.png" />
+    <Content Include="assets\textures\asteroid-normal-map-tangent.png" />
+    <Content Include="assets\textures\asteroid-normal-map.png" />
+    <Content Include="assets\textures\crate-base.png" />
+    <Content Include="assets\textures\desktop-shadow-corner.png" />
+    <Content Include="assets\textures\desktop-shadow.png" />
+    <Content Include="assets\textures\desktop-window.png" />
+    <Content Include="assets\textures\effect-2d.png" />
+    <Content Include="assets\textures\glyph-atlas.png" />
+    <Content Include="assets\textures\jellyfish-caustics-01.png" />
+    <Content Include="assets\textures\jellyfish-caustics-02.png" />
+    <Content Include="assets\textures\jellyfish-caustics-03.png" />
+    <Content Include="assets\textures\jellyfish-caustics-04.png" />
+    <Content Include="assets\textures\jellyfish-caustics-05.png" />
+    <Content Include="assets\textures\jellyfish-caustics-06.png" />
+    <Content Include="assets\textures\jellyfish-caustics-07.png" />
+    <Content Include="assets\textures\jellyfish-caustics-08.png" />
+    <Content Include="assets\textures\jellyfish-caustics-09.png" />
+    <Content Include="assets\textures\jellyfish-caustics-10.png" />
+    <Content Include="assets\textures\jellyfish-caustics-11.png" />
+    <Content Include="assets\textures\jellyfish-caustics-12.png" />
+    <Content Include="assets\textures\jellyfish-caustics-13.png" />
+    <Content Include="assets\textures\jellyfish-caustics-14.png" />
+    <Content Include="assets\textures\jellyfish-caustics-15.png" />
+    <Content Include="assets\textures\jellyfish-caustics-16.png" />
+    <Content Include="assets\textures\jellyfish-caustics-17.png" />
+    <Content Include="assets\textures\jellyfish-caustics-18.png" />
+    <Content Include="assets\textures\jellyfish-caustics-19.png" />
+    <Content Include="assets\textures\jellyfish-caustics-20.png" />
+    <Content Include="assets\textures\jellyfish-caustics-21.png" />
+    <Content Include="assets\textures\jellyfish-caustics-22.png" />
+    <Content Include="assets\textures\jellyfish-caustics-23.png" />
+    <Content Include="assets\textures\jellyfish-caustics-24.png" />
+    <Content Include="assets\textures\jellyfish-caustics-25.png" />
+    <Content Include="assets\textures\jellyfish-caustics-26.png" />
+    <Content Include="assets\textures\jellyfish-caustics-27.png" />
+    <Content Include="assets\textures\jellyfish-caustics-28.png" />
+    <Content Include="assets\textures\jellyfish-caustics-29.png" />
+    <Content Include="assets\textures\jellyfish-caustics-30.png" />
+    <Content Include="assets\textures\jellyfish-caustics-31.png" />
+    <Content Include="assets\textures\jellyfish-caustics-32.png" />
+    <Content Include="assets\textures\jellyfish256.png" />
+    <Content Include="assets\textures\nasa1.png" />
+    <Content Include="assets\textures\nasa2.png" />
+    <Content Include="assets\textures\nasa3.png" />
+    <Content Include="assets\textures\terrain-backgrounddetailed6.jpg" />
+    <Content Include="assets\textures\terrain-grasslight-512-nm.jpg" />
+    <Content Include="assets\textures\terrain-grasslight-512.jpg" />
+    <Content Include="res\values\strings.xml" />
+    <AntBuildXml Include="build.xml" />
+    <AntProjectPropertiesFile Include="project.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\glmark2\glmark2.vcxproj" />
+  </ItemGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
